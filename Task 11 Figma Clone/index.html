@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexcent Header Clone</title>
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        customGreen: '#4CAF4F',
+                        customDark: '#263238',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-slate-50 antialiased">
+
+    <!-- Header Section -->
+    <header class="w-full bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-3 cursor-pointer">
+                <!-- Dummy Logo Icon -->
+                <div class="w-9 h-9 flex items-center justify-center overflow-hidden">
+    <img src="./upload/Icon.png" alt="Nexcent Logo" class="w-full h-full object-contain">
+</div>
+                <!-- Logo Text -->
+                <span class="text-2xl font-bold text-customDark tracking-tight">Nexcent</span>
+            </div>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex items-center space-x-8 lg:space-x-12 text-sm font-medium text-gray-600">
+                <a href="#" class="text-customDark font-semibold transition-colors">Home</a>
+                <a href="#" class="hover:text-customDark transition-colors">Service</a>
+                <a href="#" class="hover:text-customDark transition-colors">Feature</a>
+                <a href="#" class="hover:text-customDark transition-colors">Product</a>
+                <a href="#" class="hover:text-customDark transition-colors">Testimonial</a>
+                <a href="#" class="hover:text-customDark transition-colors">FAQ</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="px-5 py-2.5 text-sm font-medium text-customGreen hover:opacity-80 transition-opacity">
+                    Login
+                </a>
+                <a href="#" class="px-5 py-2.5 text-sm font-medium text-white bg-customGreen rounded-md hover:opacity-95 shadow-sm transition-all">
+                    Sign up
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button (Placeholder for responsiveness) -->
+            <div class="md:hidden flex items-center">
+                <button class="text-gray-700 hover:text-customDark focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+<!-- Hero Section -->
+<section class="w-full bg-[#F5F7FA] py-16 lg:py-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+            
+            <!-- Left Text Content -->
+            <div class="flex-1 text-center lg:text-left">
+                <h1 class="text-[54px] font-semibold text-[#000000] leading-[76px] tracking-normal">
+                    Lessons and insights<br>
+                    <span class="text-customGreen">from 8 years</span>
+                </h1>
+                <p class="mt-4 text-base sm:text-lg text-gray-500 font-normal">
+                    Where to grow your business as a photographer: site or social media?
+                </p>
+                <div class="mt-8">
+                    <a href="#" class="inline-block px-8 py-3.5 text-base font-medium text-white bg-customGreen rounded-[4px] hover:opacity-95 shadow-sm transition-all">
+                        Register
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Illustration Container -->
+            <div class="flex-1 flex justify-center lg:justify-end">
+                <div class="w-full max-w-[391px] h-[407px] flex items-center justify-center">
+                    <img src="./upload/Illustration.png" alt="Hero Illustration" class="w-full h-full object-contain">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Pagination Dots -->
+        <div class="flex justify-center items-center space-x-2 mt-16">
+            <span class="w-2 h-2 bg-customGreen rounded-full cursor-pointer"></span>
+            <span class="w-2 h-2 bg-customGreen/30 rounded-full cursor-pointer hover:bg-customGreen/60 transition-colors"></span>
+            <span class="w-2 h-2 bg-customGreen/30 rounded-full cursor-pointer hover:bg-customGreen/60 transition-colors"></span>
+        </div>
+    </div>
+</section>
+
+<!-- Our Clients Section -->
+<section class="w-full bg-white py-12 lg:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto">
+            <h2 class="font-inter font-semibold text-[36px] leading-[44px] text-[#4D4D4D] tracking-normal">
+                Our Clients
+            </h2>
+            <p class="mt-2 font-inter font-normal text-[16px] leading-[24px] text-[#717171] tracking-normal">
+                We have been working with some Fortune 500+ clients
+            </p>
+        </div>
+
+        <!-- Clients Logo Grid -->
+        <div class="mt-10 flex flex-wrap items-center justify-around gap-8 md:gap-12">
+            <!-- Client Logo 1 -->
+            <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./upload/Vector.svg" alt="Client Logo 1" class="h-8 md:h-10 w-auto object-contain">
+            </div>
+            <!-- Client Logo 2 -->
+            <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./upload/Logo (3).svg" alt="Client Logo 2" class="h-8 md:h-10 w-auto object-contain">
+            </div>
+            <!-- Client Logo 3 -->
+            <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./upload/Logo (1).svg" alt="Client Logo 3" class="h-8 md:h-10 w-auto object-contain">
+            </div>
+            <!-- Client Logo 4 -->
+            <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./upload/Logo.svg" alt="Client Logo 4" class="h-8 md:h-10 w-auto object-contain">
+            </div>
+            <!-- Client Logo 5 -->
+            <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./upload/Vector (3).svg" alt="Client Logo 5" class="h-8 md:h-10 w-auto object-contain">
+            </div>
+            <!-- Client Logo 6 -->
+            <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./upload/Logo (2).svg" alt="Client Logo 6" class="h-8 md:h-10 w-auto object-contain">
+            </div>
+            <!-- Client Logo 7 -->
+            <div class="flex items-center justify-center opacity-70 hover:opacity-100 transition-opacity">
+                <img src="./upload/Logo (1).svg" alt="Client Logo 7" class="h-8 md:h-10 w-auto object-contain">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Community Management Section -->
+<section class="w-full bg-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto">
+            <h2 class="font-inter font-semibold text-[36px] sm:text-[40px] leading-[44px] sm:leading-[48px] text-[#4D4D4D] tracking-normal">
+                Manage your entire community <br class="hidden sm:inline">
+                in a single system
+            </h2>
+            <p class="mt-2 font-inter font-normal text-[16px] leading-[24px] text-[#717171] tracking-normal">
+                Who is Nextcent suitable for?
+            </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+            
+            <!-- Card 1: Membership Organisations -->
+            <div class="bg-white rounded-lg p-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-md transition-shadow flex flex-col items-center text-center">
+                <!-- Icon Container -->
+                <div class="relative w-16 h-16 flex items-center justify-center mb-6">
+                    <div class="absolute inset-0 rounded-tl-[16px] rounded-br-[16px] rounded-tr-[4px] rounded-bl-[4px]"></div>
+                    <div class="relative w-8 h-8 flex items-center justify-center overflow-hidden">
+                        <img src="./upload/Icon.svg" alt="Icon" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <h3 class="font-inter font-bold text-[24px] leading-[30px] text-[#4D4D4D] mb-3">
+                    Membership <br> Organisations
+                </h3>
+                <p class="font-inter font-normal text-[14px] leading-[20px] text-[#717171]">
+                    Our membership management software provides full automation of membership renewals and payments
+                </p>
+            </div>
+
+            <!-- Card 2: National Associations -->
+            <div class="bg-white rounded-lg p-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-md transition-shadow flex flex-col items-center text-center">
+                <!-- Icon Container -->
+                <div class="relative w-16 h-16 flex items-center justify-center mb-6">
+                    <div class="absolute inset-0 rounded-tl-[16px] rounded-br-[16px] rounded-tr-[4px] rounded-bl-[4px]"></div>
+                    <div class="relative w-8 h-8 flex items-center justify-center overflow-hidden">
+                        <img src="./upload/Icon (1).svg" alt="Icon" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <h3 class="font-inter font-bold text-[24px] leading-[30px] text-[#4D4D4D] mb-3">
+                    National <br> Associations
+                </h3>
+                <p class="font-inter font-normal text-[14px] leading-[20px] text-[#717171]">
+                    Our membership management software provides full automation of membership renewals and payments
+                </p>
+            </div>
+
+            <!-- Card 3: Clubs And Groups -->
+            <div class="bg-white rounded-lg p-8 shadow-[0_2px_8px_rgba(0,0,0,0.08)] hover:shadow-md transition-shadow flex flex-col items-center text-center">
+                <!-- Icon Container -->
+                <div class="relative w-16 h-16 flex items-center justify-center mb-6">
+                    <div class="absolute inset-0 rounded-tl-[16px] rounded-br-[16px] rounded-tr-[4px] rounded-bl-[4px]"></div>
+                    <div class="relative w-8 h-8 flex items-center justify-center overflow-hidden">
+                        <img src="./upload/Icon (2).svg" alt="Icon" class="w-full h-full object-contain">
+                    </div>
+                </div>
+                <h3 class="font-inter font-bold text-[24px] leading-[30px] text-[#4D4D4D] mb-3">
+                    Clubs And <br> Groups
+                </h3>
+                <p class="font-inter font-normal text-[14px] leading-[20px] text-[#717171]">
+                    Our membership management software provides full automation of membership renewals and payments
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Pixelgrade Feature Section -->
+<section class="w-full bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+            
+            <!-- Left Illustration Container -->
+            <div class="flex-1 flex justify-center lg:justify-start">
+                <div class="w-full max-w-[440px] h-[380px] sm:h-[420px] flex items-center justify-center overflow-hidden">
+                    <img src="./upload/Frame 35.svg" alt="Pixelgrade Illustration" class="w-full h-full object-contain">
+                </div>
+            </div>
+
+            <!-- Right Text Content -->
+            <div class="flex-1 text-center lg:text-left max-w-xl">
+                <h2 class="font-inter font-semibold text-[32px] sm:text-[36px] lg:text-[40px] leading-[40px] sm:leading-[48px] text-[#4D4D4D] tracking-tight">
+                    The unseen of spending three <br class="hidden sm:inline">
+                    years at Pixelgrade
+                </h2>
+                <p class="mt-4 font-inter font-normal text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] text-[#717171]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.
+                </p>
+                <div class="mt-8">
+                    <a href="#" class="inline-block px-8 py-3.5 text-base font-medium text-white bg-customGreen rounded-[4px] hover:opacity-95 shadow-sm transition-all">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Stats / Business Reinvent Section -->
+<section class="w-full bg-[#F5F7FA] py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+            
+            <!-- Left Side Title & Description -->
+            <div class="flex-1 text-center lg:text-left max-w-xl">
+                <h2 class="font-inter font-semibold text-[32px] sm:text-[36px] lg:text-[40px] leading-[40px] sm:leading-[48px] text-[#4D4D4D] tracking-tight">
+                    Helping a local <br>
+                    <span class="text-customGreen">business reinvent itself</span>
+                </h2>
+                <p class="mt-2 font-inter font-normal text-[14px] sm:text-[16px] leading-[24px] text-[#717171]">
+                    We reached here with our hard work and dedication
+                </p>
+            </div>
+
+            <!-- Right Side Stats Grid -->
+            <div class="flex-1 w-full max-w-xl grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-12">
+                
+                <!-- Stat Item 1: Members -->
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 flex items-center justify-center shrink-0">
+                        <img src="./upload/Icon (3).svg" alt="Members Icon" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h4 class="font-inter font-bold text-[24px] sm:text-[28px] leading-[36px] text-[#4D4D4D]">2,245,341</h4>
+                        <p class="font-inter font-normal text-[14px] leading-[20px] text-[#717171]">Members</p>
+                    </div>
+                </div>
+
+                <!-- Stat Item 2: Clubs -->
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 flex items-center justify-center shrink-0">
+                        <img src="./upload/Icon (4).svg" alt="Clubs Icon" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h4 class="font-inter font-bold text-[24px] sm:text-[28px] leading-[36px] text-[#4D4D4D]">46,328</h4>
+                        <p class="font-inter font-normal text-[14px] leading-[20px] text-[#717171]">Clubs</p>
+                    </div>
+                </div>
+
+                <!-- Stat Item 3: Event Bookings -->
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 flex items-center justify-center shrink-0">
+                        <img src="./upload/Icon (5).svg" alt="Bookings Icon" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h4 class="font-inter font-bold text-[24px] sm:text-[28px] leading-[36px] text-[#4D4D4D]">828,867</h4>
+                        <p class="font-inter font-normal text-[14px] leading-[20px] text-[#717171]">Event Bookings</p>
+                    </div>
+                </div>
+
+                <!-- Stat Item 4: Payments -->
+                <div class="flex items-center space-x-4">
+                    <div class="w-10 h-10 flex items-center justify-center shrink-0">
+                        <img src="./upload/Icon (7).svg" alt="Payments Icon" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h4 class="font-inter font-bold text-[24px] sm:text-[28px] leading-[36px] text-[#4D4D4D]">1,926,436</h4>
+                        <p class="font-inter font-normal text-[14px] leading-[20px] text-[#717171]">Payments</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Design Footer Feature Section -->
+<section class="w-full bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+            
+            <!-- Left Illustration Container -->
+            <div class="flex-1 flex justify-center lg:justify-start">
+                <div class="w-full max-w-[440px] h-[380px] sm:h-[420px] flex items-center justify-center overflow-hidden">
+                    <img src="./upload/pana.svg" alt="Footer Illustration" class="w-full h-full object-contain">
+                </div>
+            </div>
+
+            <!-- Right Text Content -->
+            <div class="flex-1 text-center lg:text-left max-w-xl">
+                <h2 class="font-inter font-semibold text-[32px] sm:text-[36px] lg:text-[35px] leading-[40px] sm:leading-[48px] text-[#4D4D4D] tracking-tight">
+                    How to design your site footer like <br class="hidden sm:inline">
+                    we did
+                </h2>
+                <p class="mt-4 font-inter font-normal text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] text-[#717171]">
+                    Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultrices, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.
+                </p>
+                <div class="mt-8">
+                    <a href="#" class="inline-block px-8 py-3.5 text-base font-medium text-white bg-customGreen rounded-[4px] hover:opacity-95 shadow-sm transition-all">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="w-full bg-[#F5F7FA] py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+            
+            <!-- Left Side Image / Icon Container -->
+            <div class="flex-1 flex justify-center lg:justify-start">
+                <div class="w-full max-w-[326px] h-[326px] sm:max-w-[360px] sm:h-[360px] rounded-lg overflow-hidden shadow-sm">
+                    <img src="./upload/image 9.png" alt="Tesla App Icon" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Right Side Testimonial Content -->
+            <div class="flex-1 text-center lg:text-left max-w-2xl">
+                <!-- Testimonial Quote -->
+                <p class="font-inter font-medium text-[14px] sm:text-[16px] leading-[24px] text-[#717171]">
+                    Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+                </p>
+
+                <!-- Author Name -->
+                <h4 class="mt-4 font-inter font-semibold text-[20px] leading-[28px] text-customGreen">
+                    Tim Smith
+                </h4>
+                
+                <!-- Author Title / Association -->
+                <p class="font-inter font-normal text-[14px] leading-[20px] text-[#ABBED1]">
+                    British Dragon Boat Racing Association
+                </p>
+
+                <!-- Client Logos and Link Row -->
+                <div class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-6 lg:gap-8">
+                    <!-- Logo 1 -->
+                    <div class="w-8 h-8 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+                        <img src="./upload/Vector.svg" alt="Logo 1" class="w-full h-full object-contain">
+                    </div>
+                    <!-- Logo 2 -->
+                    <div class="w-8 h-8 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+                        <img src="./upload/Vector (3).svg" alt="Logo 2" class="w-full h-full object-contain">
+                    </div>
+                    <!-- Logo 3 -->
+                    <div class="w-8 h-8 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+                        <img src="./upload/Vector (1).svg" alt="Logo 3" class="w-full h-full object-contain">
+                    </div>
+                    <!-- Logo 4 -->
+                    <div class="w-8 h-8 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+                        <img src="./upload/Logo (2).svg" alt="Logo 4" class="w-full h-full object-contain">
+                    </div>
+                    <!-- Logo 5 -->
+                    <div class="w-8 h-8 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+                        <img src="./upload/Logo.svg" alt="Logo 5" class="w-full h-full object-contain">
+                    </div>
+                    <!-- Logo 6 -->
+                    <div class="w-8 h-8 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+                        <img src="./upload/Logo (1).svg" alt="Logo 6" class="w-full h-full object-contain">
+                    </div>
+
+                    <!-- Meet All Customers Link -->
+                    <a href="#" class="inline-flex items-center space-x-2 font-inter font-semibold text-[16px] leading-[24px] text-customGreen hover:opacity-80 transition-opacity ml-auto sm:ml-0">
+                        <span>Meet all customers</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Blog / Caring is the new marketing Section -->
+<section class="w-full bg-white py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto">
+            <h2 class="font-inter font-semibold text-[32px] sm:text-[36px] lg:text-[40px] leading-[40px] sm:leading-[48px] text-[#4D4D4D] tracking-tight">
+                Caring is the new marketing
+            </h2>
+            <p class="mt-3 font-inter font-normal text-[14px] sm:text-[16px] leading-[22px] sm:leading-[24px] text-[#717171]">
+                The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.
+            </p>
+        </div>
+
+        <!-- Blog Cards Grid -->
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            
+            <!-- Blog Card 1 -->
+            <div class="relative flex flex-col items-center">
+                <!-- Card Image -->
+                <div class="w-full h-[286px] rounded-lg overflow-hidden shadow-sm">
+                    <img src="./upload/image 18.png" alt="Blog 1" class="w-full h-full object-cover">
+                </div>
+                <!-- Floating Info Box -->
+                <div class="absolute bottom-[-40px] w-[90%] max-w-[317px] bg-[#F5F7FA] rounded-lg p-5 shadow-[0_8px_16px_rgba(0,0,0,0.08)] flex flex-col items-center text-center">
+                    <h3 class="font-inter font-semibold text-[18px] leading-[24px] text-[#717171] mb-4">
+                        Creating Streamlined Safeguarding Processes with OneRen
+                    </h3>
+                    <a href="#" class="inline-flex items-center space-x-2 font-inter font-semibold text-[16px] leading-[24px] text-customGreen hover:opacity-80 transition-opacity">
+                        <span>Readmore</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="relative flex flex-col items-center mt-12 md:mt-0">
+                <!-- Card Image -->
+                <div class="w-full h-[286px] rounded-lg overflow-hidden shadow-sm">
+                    <img src="./upload/image 19.png" alt="Blog 2" class="w-full h-full object-cover">
+                </div>
+                <!-- Floating Info Box -->
+                <div class="absolute bottom-[-40px] w-[90%] max-w-[317px] bg-[#F5F7FA] rounded-lg p-5 shadow-[0_8px_16px_rgba(0,0,0,0.08)] flex flex-col items-center text-center">
+                    <h3 class="font-inter font-semibold text-[18px] leading-[24px] text-[#717171] mb-4">
+                        What are your safeguarding responsibilities and how can you manage them?
+                    </h3>
+                    <a href="#" class="inline-flex items-center space-x-2 font-inter font-semibold text-[16px] leading-[24px] text-customGreen hover:opacity-80 transition-opacity">
+                        <span>Readmore</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="relative flex flex-col items-center mt-12 md:mt-0">
+                <!-- Card Image -->
+                <div class="w-full h-[286px] rounded-lg overflow-hidden shadow-sm">
+                    <img src="./upload/image 20.png" alt="Blog 3" class="w-full h-full object-cover">
+                </div>
+                <!-- Floating Info Box -->
+                <div class="absolute bottom-[-40px] w-[90%] max-w-[317px] bg-[#F5F7FA] rounded-lg p-5 shadow-[0_8px_16px_rgba(0,0,0,0.08)] flex flex-col items-center text-center">
+                    <h3 class="font-inter font-semibold text-[18px] leading-[24px] text-[#717171] mb-4">
+                        Revamping the Membership Model with Triathlon Australia
+                    </h3>
+                    <a href="#" class="inline-flex items-center space-x-2 font-inter font-semibold text-[16px] leading-[24px] text-customGreen hover:opacity-80 transition-opacity">
+                        <span>Readmore</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Spacer to accommodate absolute bottom cards overlapping the section bottom -->
+        <div class="h-16"></div>
+
+    </div>
+</section>
+
+<!-- Call to Action (CTA) Section -->
+<section class="w-full bg-[#F5F7FA] py-16 lg:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        
+        <!-- Headline -->
+        <h2 class="font-inter font-semibold text-[36px] sm:text-[48px] lg:text-[64px] leading-[44px] sm:leading-[56px] lg:leading-[76px] text-[#263238] tracking-tight">
+            Pellentesque suscipit<br>
+            fringilla libero eu.
+        </h2>
+
+        <!-- Get a Demo Button -->
+        <div class="mt-8">
+            <a href="#" class="inline-flex items-center space-x-2 px-8 py-3.5 text-base font-medium text-white bg-customGreen rounded-[4px] hover:opacity-95 shadow-sm transition-all">
+                <span>Get a Demo</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="w-full bg-[#263238] text-white py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
+            
+            <!-- Column 1 & 2: Logo, Copyright, and Social Links -->
+            <div class="lg:col-span-2 flex flex-col justify-between space-y-8">
+                <div>
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-3">
+                        <img src="./upload/logo-white.svg" alt="Nexcent Logo" class="h-8 w-auto">
+                        <span class="font-inter font-bold text-[24px] tracking-tight text-white">Nexcent</span>
+                    </div>
+                    <!-- Copyright Text -->
+                    <div class="mt-8 font-inter font-normal text-[14px] leading-[20px] text-[#F5F7FA] space-y-1">
+                        <p>Copyright © 2020 Nexcent ltd.</p>
+                        <p>All rights reserved</p>
+                    </div>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="w-8 h-8 rounded-full bg-[#374151] flex items-center justify-center hover:bg-customGreen transition-colors overflow-hidden p-1.5">
+                        <img src="./upload/Social Icons.svg" alt="Instagram" class="w-full h-full object-contain">
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-[#374151] flex items-center justify-center hover:bg-customGreen transition-colors overflow-hidden p-1.5">
+                        <img src="./upload/Social Icons 1.svg" alt="Dribbble" class="w-full h-full object-contain">
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-[#374151] flex items-center justify-center hover:bg-customGreen transition-colors overflow-hidden p-1.5">
+                        <img src="./upload/Social Icons 2.svg" alt="Twitter" class="w-full h-full object-contain">
+                    </a>
+                    <a href="#" class="w-8 h-8 rounded-full bg-[#374151] flex items-center justify-center hover:bg-customGreen transition-colors overflow-hidden p-1.5">
+                        <img src="./upload/Social Icons 4.svg" alt="YouTube" class="w-full h-full object-contain">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 3: Company Links -->
+            <div>
+                <h3 class="font-inter font-semibold text-[20px] leading-[28px] text-white mb-6">Company</h3>
+                <ul class="space-y-3 font-inter font-normal text-[14px] leading-[20px] text-[#F5F7FA]">
+                    <li><a href="#" class="hover:text-white transition-colors">About us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Contact us</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Pricing</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Testimonials</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Support Links -->
+            <div>
+                <h3 class="font-inter font-semibold text-[20px] leading-[28px] text-white mb-6">Support</h3>
+                <ul class="space-y-3 font-inter font-normal text-[14px] leading-[20px] text-[#F5F7FA]">
+                    <li><a href="#" class="hover:text-white transition-colors">Help center</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Terms of service</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Legal</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Privacy policy</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Status</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5: Stay up to date (Newsletter) -->
+            <div>
+                <h3 class="font-inter font-semibold text-[20px] leading-[28px] text-white mb-6">Stay up to date</h3>
+                <form class="relative">
+                    <input type="email" placeholder="Your email address" class="w-full bg-[#515F65] text-white placeholder-[#D1D5DB] text-[14px] rounded-lg pl-4 pr-12 py-3.5 focus:outline-none focus:ring-2 focus:ring-customGreen">
+                    <button type="submit" class="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 flex items-center justify-center">
+                        <img src="./upload/send.svg" alt="Send" class="w-full h-full object-contain">
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>
